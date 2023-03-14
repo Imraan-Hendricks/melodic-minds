@@ -3,11 +3,27 @@
 @tailwind utilities;
 
 @layer components {
+  .text-display {
+    @apply font-medium text-7xl sm:text-8xl leading-tight tracking-tight;
+  }
+
   .text-title {
-    @apply font-bold text-4xl sm:text-5xl leading-normal tracking-tight;
+    @apply font-bold text-5xl sm:text-6xl leading-normal tracking-tight;
   }
 
   .text-subtitle {
-    @apply font-normal text-lg sm:text-xl leading-normal tracking-tight;
+    @apply font-normal text-xl sm:text-2xl leading-normal tracking-tight;
+  }
+
+  .text-h1 {
+    @apply font-bold text-2xl sm:text-3xl leading-normal tracking-tight;
+  }
+
+  .text-h2 {
+    @apply font-bold text-xl sm:text-2xl leading-normal tracking-tight;
+  }
+
+  .text-body {
+    @apply text-base sm:text-lg;
   }
 }
