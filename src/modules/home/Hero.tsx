@@ -3,7 +3,7 @@ import { CheckIcon } from '@heroicons/react/24/outline';
 export function Hero() {
   return (
     <section className='bg-black px-5'>
-      <div className='flex flex-col md:flex-row justify-evenly items-center pb-12 md:pb-0'>
+      <div className='flex flex-col lg:flex-row justify-evenly items-center pb-12 lg:pb-0'>
         <div>
           <img src='/hero/mic.jpg' alt='microphone' />
         </div>
@@ -18,7 +18,7 @@ export function Hero() {
               - the ultimate recording studio for bringing your music to life.
             </p>
           </div>
-          <ul className='grid grid-cols-2 md:grid-cols-3 gap-8'>
+          <ul className='grid grid-cols-2 lg:grid-cols-3 gap-8'>
             {[
               'Pro-level gear',
               'Expert engineers',
