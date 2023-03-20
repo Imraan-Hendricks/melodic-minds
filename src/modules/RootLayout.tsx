@@ -1,3 +1,6 @@
+import { clsx } from 'clsx';
+import { Footer } from './Footer';
+import { Navbar } from './Navbar';
 import { Noto_Sans } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 
@@ -8,5 +11,13 @@ const noto_Sans = Noto_Sans({
 });
 
 export function RootLayout({ children }: PropsWithChildren) {
-  return <div className={noto_Sans.className}>{children}</div>;
+  return (
+    <div className={clsx('flex flex-col h-screen', noto_Sans.className)}>
+      <header>
+        <Navbar />
+      </header>
+      <main className='grow'>{children}</main>
+      <Footer />
+    </div>
+  );
 }

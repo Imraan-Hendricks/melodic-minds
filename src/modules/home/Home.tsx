@@ -4,10 +4,10 @@ import { Hero } from './Hero';
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <CustomHead title='Home' />
       <Hero />
       <About />
-    </main>
+    </div>
   );
 }
