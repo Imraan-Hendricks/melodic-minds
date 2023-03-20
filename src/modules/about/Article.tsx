@@ -1,7 +1,7 @@
 export function Article() {
   return (
     <section className='px-5 py-24 bg-black'>
-      <div className='container mx-auto max-w-screen-xl grid gap-12'>
+      <div className='container mx-auto grid gap-12'>
         <div className='grid gap-5 text-center'>
           <h1 className='text-title text-gray-300'>
             Welcome to <span className='text-white'>Melodic</span>{' '}
