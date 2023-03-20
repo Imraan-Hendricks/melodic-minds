@@ -1,5 +1,9 @@
 import Link from 'next/link';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  Bars3Icon,
+  MusicalNoteIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
 import { FC, Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 
@@ -13,20 +17,15 @@ export const Navbar: FC = () => {
 
   return (
     <Popover as='header' className='relative bg-black'>
-      <div className='mx-auto max-w-7xl px-4 sm:px-6'>
+      <div className='container mx-auto px-4 sm:px-6'>
         <div className='flex items-center justify-between border-b border-gray-600 py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
             <Link href='/'>
-              <span className='sr-only'>Workflow</span>
-              <img
-                className='h-8 w-auto sm:h-10'
-                src='https://tailwindui.com/img/logos/workflow-mark.svg?color=purple&shade=500'
-                alt='Workflow'
-              />
+              <MusicalNoteIcon className='h-8 w-auto sm:h-10 text-primary-400' />
             </Link>
           </div>
           <div className='-my-2 -mr-2 md:hidden'>
-            <Popover.Button className='inline-flex items-center justify-center rounded-md bg-primary-700 p-2 text-white hover:bg-primary-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-400'>
+            <Popover.Button className='inline-flex items-center justify-center rounded-md bg-primary-500 p-2 text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-400'>
               <span className='sr-only'>Open menu</span>
               <Bars3Icon className='h-6 w-6' aria-hidden='true' />
             </Popover.Button>
@@ -71,11 +70,7 @@ export const Navbar: FC = () => {
             <div className='px-5 pt-5 pb-6'>
               <div className='flex items-center justify-between'>
                 <div>
-                  <img
-                    className='h-8 w-auto'
-                    src='https://tailwindui.com/img/logos/workflow-mark.svg?color=purple&shade=500'
-                    alt='Workflow'
-                  />
+                  <MusicalNoteIcon className='h-8 w-auto sm:h-10 text-primary-400' />
                 </div>
                 <div className='-mr-2'>
                   <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-400'>

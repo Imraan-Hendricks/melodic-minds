@@ -1,6 +1,6 @@
 {
   "name": "melodic-minds",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Imraan-Hendricks",
   "description": "Melodic Minds - a portfolio project designed to showcase skills in React and Tailwind CSS",
   "private": true,
@@ -15,6 +15,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
     "@types/node": "18.14.5",

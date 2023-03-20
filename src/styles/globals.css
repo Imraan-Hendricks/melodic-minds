@@ -23,6 +23,10 @@
     @apply font-bold text-xl sm:text-2xl leading-normal tracking-tight;
   }
 
+  .text-fineprint {
+    @apply font-normal text-xs sm:text-sm leading-snug tracking-wide;
+  }
+
   .text-body {
     @apply text-base sm:text-lg;
   }
