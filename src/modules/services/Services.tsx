@@ -1,11 +1,13 @@
 import { CustomHead } from '@/components/CustomHead';
-import { Features } from './Features';
+import { Sound } from './Sound';
+import { Studio } from './Studio';
 
 export default function Services() {
   return (
     <div>
       <CustomHead title='Services' />
-      <Features />
+      <Studio />
+      <Sound />
     </div>
   );
 }

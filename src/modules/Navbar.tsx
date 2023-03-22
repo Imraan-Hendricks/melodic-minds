@@ -12,6 +12,7 @@ export const Navbar: FC = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Blog', href: '/Blog' },
     { name: 'Contact', href: '/contact' },
   ];
 

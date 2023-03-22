@@ -13,7 +13,7 @@ import {
 import { clsx } from 'clsx';
 import { isEven } from '@/utils/common';
 
-export function Features() {
+export function Sound() {
   return (
     <section className='py-24 px-5'>
       <div className='container mx-auto grid gap-12'>
@@ -30,7 +30,7 @@ export function Features() {
           </p>
         </div>
         <hr />
-        <div className='grid lg:grid-cols-3 gap-y-24 gap-x-8 justify-items-center'>
+        <div className='grid lg:grid-cols-3 gap-y-12 lg:gap-y-24 gap-x-8 justify-items-center'>
           {[
             {
               Icon: MicrophoneIcon,
