@@ -4,10 +4,10 @@ import {
   MusicalNoteIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { FC, Fragment } from 'react';
+import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 
-export const Navbar: FC = () => {
+export function Navbar() {
   const links = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -113,4 +113,4 @@ export const Navbar: FC = () => {
       </Transition>
     </Popover>
   );
-};
+}

@@ -118,7 +118,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         />
         <p
           className={clsx(
-            'text-body',
+            'text-fineprint',
             !helperText && 'hidden',
             isError && [
               isFocused && 'text-primary-500',

@@ -121,7 +121,7 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
         />
         <p
           className={clsx(
-            'text-body',
+            'text-fineprint',
             !helperText && 'hidden',
             isError && [
               isFocused && 'text-primary-500',
