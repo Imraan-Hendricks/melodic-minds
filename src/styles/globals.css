@@ -31,6 +31,10 @@
     @apply text-base sm:text-lg;
   }
 
+  .text-largeprint {
+    @apply font-normal text-lg sm:text-xl leading-normal tracking-tight;
+  }
+
   .text-button {
     @apply font-medium text-sm sm:text-base leading-relaxed tracking-wide;
   }
