@@ -12,7 +12,11 @@ export function Article() {
           </p>
         </div>
         <div className='rounded-md overflow-hidden'>
-          <img className='w-full' src='/article/concert.jpg' alt='concert' />
+          <img
+            className='w-full'
+            src='/about/article/concert.jpg'
+            alt='concert'
+          />
         </div>
         <div className='grid gap-5'>
           <div className='grid gap-2'>

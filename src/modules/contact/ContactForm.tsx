@@ -1,21 +1,21 @@
-import { Button } from '@/components/button/Button';
+import { Button } from '@/components/Button';
 import {
   EnvelopeIcon,
   MapPinIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
-import { TextArea } from '@/components/form/TextArea';
-import { TextField } from '@/components/form/TextField';
+import { TextArea } from '@/components/TextArea';
+import { TextField } from '@/components/TextField';
 
 export function ContactForm() {
   return (
     <div className='relative'>
       <img
         className='absolute inset-0 object-cover w-full h-full'
-        src='/contact/recording-studio.jpg'
+        src='/contact/contact-form/recording-studio.jpg'
         alt='recording studio'
       />
-      <div className='relative bg-black/90'>
+      <div className='relative bg-gradient-to-bl from-black/90 via-black/95 to-black/80'>
         <section className='px-5 py-24'>
           <div className='container mx-auto grid xl:grid-cols-2 gap-12 items-center justify-center'>
             <div className='grid gap-8 h-max'>

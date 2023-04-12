@@ -2,6 +2,7 @@ import { About } from './About';
 import { CustomHead } from '@/components/CustomHead';
 import { Hero } from './Hero';
 import { Services } from './Services';
+import { Studio } from './Studio';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <CustomHead title='Home' />
       <Hero />
       <About />
+      <Studio />
       <Services />
     </div>
   );

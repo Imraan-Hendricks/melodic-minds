@@ -11,10 +11,10 @@ export function Studio() {
     <div className='relative'>
       <img
         className='absolute inset-0 object-cover w-full h-full'
-        src='/home/studio/recording-studio.jpg'
+        src='/services/studio/recording-studio.jpg'
         alt='recording studio'
       />
-      <div className='relative bg-black/90'>
+      <div className='relative bg-gradient-to-bl from-black/90 via-black/95 to-black/80'>
         <section className='py-24 px-5'>
           <div className='container mx-auto grid gap-12'>
             <div className='grid lg:grid-cols-2 gap-y-24 gap-x-12'>

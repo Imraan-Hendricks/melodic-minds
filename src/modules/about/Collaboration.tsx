@@ -3,7 +3,7 @@ const features = [
     title: 'Power of Collaboration',
     body: 'At Melodic Minds, we believe in the power of collaboration to produce exceptional music.',
     img: {
-      src: '/collaboration/vocalist-1.jpg',
+      src: '/about/collaboration/vocalist-1.jpg',
       alt: 'vocalist-1',
     },
   },
@@ -11,7 +11,7 @@ const features = [
     title: 'Range of Services',
     body: 'Our services include group recording sessions, songwriting, and artist development workshops.',
     img: {
-      src: '/collaboration/vocalist-2.jpg',
+      src: '/about/collaboration/vocalist-2.jpg',
       alt: 'vocalist-2',
     },
   },
@@ -19,7 +19,7 @@ const features = [
     title: 'Create Something Special',
     body: 'Collaborate with other artists, expand your network, learn new skills, and create something truly special.',
     img: {
-      src: '/collaboration/vocalist-3.jpg',
+      src: '/about/collaboration/vocalist-3.jpg',
       alt: 'vocalist-3',
     },
   },

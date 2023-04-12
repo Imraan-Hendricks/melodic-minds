@@ -119,15 +119,15 @@ export function Sound() {
         </div>
         <div className='container mx-auto grid sm:grid-cols-5 gap-12 sm:gap-6 md:gap-9 lg:gap-12 justify-center items-center'>
           {[
-            { src: '/features/akg-logo.png', alt: 'akg' },
+            { src: '/services/sound/akg-logo.png', alt: 'akg' },
 
-            { src: '/features/sennheiser-logo.png', alt: 'sennheiser' },
-            { src: '/features/shure-logo.png', alt: 'shure' },
+            { src: '/services/sound/sennheiser-logo.png', alt: 'sennheiser' },
+            { src: '/services/sound/shure-logo.png', alt: 'shure' },
             {
-              src: '/features/electro-voice-logo.png',
+              src: '/services/sound/electro-voice-logo.png',
               alt: 'electro-voice',
             },
-            { src: '/features/rode-logo.png', alt: 'rode' },
+            { src: '/services/sound/rode-logo.png', alt: 'rode' },
           ].map(({ src, alt }) => (
             <div className='mx-32 sm:mx-0' key={src}>
               <img className='w-ful' src={src} alt={alt} />
