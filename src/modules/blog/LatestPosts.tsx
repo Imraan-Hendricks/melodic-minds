@@ -10,7 +10,7 @@ export function LatestPosts({ posts }: LatestPostsProps) {
   return (
     <section className='py-24 px-5 bg-black'>
       <div className='container mx-auto grid gap-8'>
-        <div className='grid grid-cols-2 gap-16'>
+        <div className='grid xl:grid-cols-2 gap-16'>
           <div className='grid gap-8 h-max'>
             <Link href={posts[0].location}>
               <div className='rounded overflow-hidden relative'>
@@ -29,10 +29,10 @@ export function LatestPosts({ posts }: LatestPostsProps) {
               </Button>
             </Link>
           </div>
-          <div className='grid gap-8'>
+          <div className='grid sm:grid-cols-2 xl:grid-cols-1 gap-8'>
             {posts.slice(1, 4).map(({ date, title, location, img }) => (
               <Link key={title} href={location}>
-                <div className='group grid grid-cols-2 gap-4 items-center'>
+                <div className='group grid xl:grid-cols-2 gap-4 items-center'>
                   <div className='rounded overflow-hidden relative'>
                     <div className='absolute group-hover:bg-black/25 h-full w-full inset-0 transition-colors' />
                     <img src={img.src} alt={img.alt} />
