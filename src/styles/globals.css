@@ -23,6 +23,10 @@
     @apply font-bold text-xl sm:text-2xl leading-normal tracking-tight;
   }
 
+  .text-h3 {
+    @apply font-bold text-lg sm:text-xl leading-normal tracking-tight;
+  }
+
   .text-fineprint {
     @apply font-normal text-xs sm:text-sm leading-snug tracking-wide;
   }

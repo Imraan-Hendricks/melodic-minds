@@ -7,6 +7,7 @@ import { PropsWithChildren } from 'react';
 const noto_Sans = Noto_Sans({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
+  fallback: ['Helvetica', 'Arial', 'sans-serif'],
   display: 'swap',
 });
 
