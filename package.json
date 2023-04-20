@@ -1,8 +1,8 @@
 {
   "name": "melodic-minds",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "author": "Imraan-Hendricks",
-  "description": "Melodic Minds - a portfolio project designed to showcase skills in React and Tailwind CSS",
+  "description": "Unleash your creativity and elevate your sound with Melodic Minds - the ultimate recording studio for bringing your music to life.",
   "private": true,
   "repository": {
     "type": "git",

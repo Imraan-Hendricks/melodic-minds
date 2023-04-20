@@ -1,6 +1,6 @@
 # Melodic Minds
 
-Welcome to the GitHub repository for Melodic Minds - a portfolio project designed to showcase skills in React and Tailwind CSS. Here, you'll find all the code and files that power the Melodic Minds website, from the front-end React components to the custom Tailwind CSS styles.
+Unleash your creativity and elevate your sound with Melodic Minds - the ultimate recording studio for bringing your music to life. Here, you'll find all the code and files that power the Melodic Minds website, from the front-end React components to the custom Tailwind CSS styles.
 
 ### The project uses:
 

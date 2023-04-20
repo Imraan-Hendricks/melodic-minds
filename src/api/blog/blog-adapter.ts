@@ -17,6 +17,14 @@ export function getPosts() {
   });
 }
 
+export function getPostByName(name: string) {
+  return new Promise<Post>((res, rej) => {
+    const filteredPosts = posts.filter((post) => post.name === name);
+    if (posts.length === 0) rej({ message: 'No post found' });
+    res(filteredPosts[0]);
+  });
+}
+
 const posts = [
   {
     date: '12 April 2023',
