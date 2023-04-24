@@ -3,6 +3,7 @@ import { CustomHead } from '@/components/CustomHead';
 import { Hero } from './Hero';
 import { Services } from './Services';
 import { Studio } from './Studio';
+import { Testimonials } from './Testimonials';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Studio />
       <Services />
+      <Testimonials />
     </div>
   );
 }
