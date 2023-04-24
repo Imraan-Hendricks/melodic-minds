@@ -81,9 +81,12 @@ export function Footer() {
             </p>
             <div className='flex'>
               {[
-                { name: 'F.A.Q', href: 'faq' },
-                { name: 'Privacy Policy', href: 'privacy-policy' },
-                { name: 'Terms & Conditions', href: 'terms-and-conditions' },
+                { name: 'F.A.Q', href: '/contact?navigate=FAQ' },
+                { name: 'Privacy Policy', href: '/legal/privacy-policy' },
+                {
+                  name: 'Terms & Conditions',
+                  href: '/legal/terms-and-conditions',
+                },
               ].map(({ name, href }) => (
                 <Link
                   key={name}
