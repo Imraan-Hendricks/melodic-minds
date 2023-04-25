@@ -1,8 +1,19 @@
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import { useRouter } from 'next/router';
+import { useEffect, useRef } from 'react';
 
 export function FAQ() {
+  const navigate = useRouter().query.navigate;
+
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (navigate !== 'FAQ') return;
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [navigate]);
+
   return (
-    <section className='px-5 py-24 bg-gray-50'>
+    <section ref={ref} className='px-5 py-24 bg-gray-50'>
       <div className='container mx-auto max-w-7xl grid gap-16'>
         <div className='grid gap-4'>
           <h2 className='text-subtitle text-primary-400 text-center'>FAQ</h2>

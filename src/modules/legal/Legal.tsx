@@ -1,5 +1,6 @@
 import { clsx } from 'clsx';
 import { PrivacyPolicy } from './PrivacyPolicy';
+import { TermsAndConditions } from './TermsAndConditions';
 import { useRouter } from 'next/router';
 
 export function Legal() {
@@ -38,7 +39,7 @@ export function Legal() {
           {option === 'privacy-policy' ? (
             <PrivacyPolicy />
           ) : option === 'terms-and-conditions' ? (
-            <div>Terms and conditions</div>
+            <TermsAndConditions />
           ) : (
             <p>Select an option</p>
           )}
