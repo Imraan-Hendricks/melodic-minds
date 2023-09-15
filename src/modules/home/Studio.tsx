@@ -15,7 +15,8 @@ export function Studio() {
           <p className='text-body text-gray-400'>
             With a team of experienced engineers and producers, Melodic Minds
             offers a collaborative environment where musicians can feel
-            comfortable and confident in their creative process. Whether you're
+            comfortable and confident in their creative process. Whether{' '}
+            {`you're`}
             looking to record a single or a full-length album, Melodic Minds is
             the perfect place to bring your music to life.
           </p>

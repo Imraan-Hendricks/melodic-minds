@@ -19,7 +19,8 @@ export function FAQ() {
           <h2 className='text-subtitle text-primary-400 text-center'>FAQ</h2>
           <h1 className='text-title text-center'>Frequently ask questions</h1>
           <p className='text-body text-gray-500 max-w-4xl mx-auto'>
-            Find the Answers You're Looking For About Our Recording Facilities
+            Find the Answers {`You're`} Looking For About Our Recording
+            Facilities
           </p>
         </div>
         <ul className='grid lg:grid-cols-2 gap-x-12 gap-y-16 lg:gap-y-16 xl:gap-y-20 2xl:gap-y-24'>

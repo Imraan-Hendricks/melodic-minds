@@ -17,7 +17,7 @@ export function Article({ className, filename }: ArticleProps) {
       setMarkdown(text);
     }
     fetchMarkdown();
-  }, []);
+  }, [filename]);
 
   return (
     <article
