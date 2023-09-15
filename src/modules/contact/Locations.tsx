@@ -8,9 +8,9 @@ export function Locations() {
           <h2 className='text-subtitle text-primary-400'>Our Locations</h2>
           <h1 className='text-title'>Find a studio near you</h1>
           <p className='text-body text-gray-500 max-w-4xl'>
-            Explore Melodic Minds' Network of Cutting-Edge Recording Studios and
-            Production Facilities Across the Country, and Find the One Nearest
-            to You!
+            Explore Melodic {`Minds'`} Network of Cutting-Edge Recording Studios
+            and Production Facilities Across the Country, and Find the One
+            Nearest to You!
           </p>
         </div>
         <ul className='grid lg:grid-cols-2 gap-12'>

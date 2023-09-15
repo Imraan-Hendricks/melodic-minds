@@ -40,7 +40,7 @@ export function Testimonials() {
                 </p>
                 <p className='text-body text-gray-100/80'>
                   “ As a seasoned musician with over a decade of experience,
-                  I've worked with my fair share of recording studios. But
+                  {`I've`} worked with my fair share of recording studios. But
                   Melodic Minds truly stands out as the best of the best. From
                   the moment I stepped into their studio, I was blown away by
                   their attention to detail and commitment to excellence. The
@@ -122,7 +122,7 @@ export function Testimonials() {
                 state-of-the-art equipment to the world-class engineers,
                 everything was top-notch. But what truly sets Melodic Minds
                 apart is their passion and dedication to helping artists like me
-                achieve their dreams. I couldn't be more grateful for the
+                achieve their dreams. I {`couldn't`} be more grateful for the
                 incredible experience I had at Melodic Minds. ”
               </p>
             </div>
