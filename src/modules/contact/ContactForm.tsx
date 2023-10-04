@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import RecordingStudio from '../../../public/contact/contact-form/recording-studio.jpg';
 import { Button } from '@/components/Button';
 import {
   EnvelopeIcon,
@@ -10,9 +12,9 @@ import { TextField } from '@/components/TextField';
 export function ContactForm() {
   return (
     <div className='relative'>
-      <img
+      <Image
         className='absolute inset-0 object-cover w-full h-full'
-        src='/contact/contact-form/recording-studio.jpg'
+        src={RecordingStudio}
         alt='recording studio'
       />
       <div className='relative bg-gradient-to-bl from-black/90 via-black/95 to-black/80'>

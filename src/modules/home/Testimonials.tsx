@@ -1,3 +1,10 @@
+import Image from 'next/image';
+import SofiaImage from '../../../public/home/testimonials/sofia-rodriguez.jpg';
+import TomImage from '../../../public/home/testimonials/tom-green.jpg';
+import BrianImage from '../../../public/home/testimonials/brian-lee.jpg';
+import SaraImage from '../../../public/home/testimonials/sara-thompson.jpg';
+import SamanthaImage from '../../../public/home/testimonials/samantha-johnson.jpg';
+
 export function Testimonials() {
   return (
     <section className='bg-primary-100 py-24 px-5 h-auto lg:p-main'>
@@ -24,10 +31,11 @@ export function Testimonials() {
             </div>
             <div className='z-10 grid gap-5'>
               <div className='flex items-center gap-4'>
-                <img
+                <Image
                   className='w-10 h-10 rounded-full border-2'
-                  src='./home/testimonials/sofia-rodriguez.jpg'
+                  src={SofiaImage}
                   alt='client-profile'
+                  placeholder='blur'
                 />
                 <div>
                   <h1 className='text-h3 text-gray-100'>Sofia Rodriguez</h1>
@@ -53,10 +61,11 @@ export function Testimonials() {
 
           <article className='article bg-gray-600 rounded-lg px-5 py-5 grid gap-5'>
             <div className='flex items-center gap-4'>
-              <img
+              <Image
                 className='w-10 h-10 rounded-full border-2'
-                src='./home/testimonials/tom-green.jpg'
+                src={TomImage}
                 alt='client-profile'
+                placeholder='blur'
               />
               <div>
                 <h1 className='text-h3 text-gray-100'>Tom Green</h1>
@@ -77,10 +86,11 @@ export function Testimonials() {
 
           <article className='article bg-White lg:order-4 rounded-lg px-5 py-5 grid gap-5'>
             <div className='flex items-center gap-4'>
-              <img
+              <Image
                 className='w-10 h-10 rounded-full border-2'
-                src='./home/testimonials/brian-lee.jpg'
+                src={BrianImage}
                 alt='client-profile'
+                placeholder='blur'
               />
               <div>
                 <h1 className='text-h3 text-gray-900'>Brian Lee</h1>
@@ -101,10 +111,11 @@ export function Testimonials() {
 
           <article className='article bg-gray-900 lg:col-span-2 lg:order-5 rounded-lg px-5 py-5 grid gap-5'>
             <div className='flex items-center gap-4'>
-              <img
+              <Image
                 className='w-10 h-10 rounded-full border-2 border-primary-500'
-                src='./home/testimonials/sara-thompson.jpg'
+                src={SaraImage}
                 alt='client-profile'
+                placeholder='blur'
               />
               <div>
                 <h1 className='text-h3 text-gray-100'>Sara Thompson</h1>
@@ -130,10 +141,11 @@ export function Testimonials() {
 
           <article className='article bg-White lg:row-span-2 lg:order-3 rounded-lg px-5 py-5 grid gap-5'>
             <div className='flex items-center gap-4'>
-              <img
+              <Image
                 className='w-10 h-10 rounded-full border-2 border-gray-400'
-                src='./home/testimonials/samantha-johnson.jpg'
+                src={SamanthaImage}
                 alt='client-profile'
+                placeholder='blur'
               />
               <div>
                 <h1 className='text-h3 text-gray-900'>Samantha Johnson</h1>

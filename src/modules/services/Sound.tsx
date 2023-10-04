@@ -1,3 +1,9 @@
+import Image from 'next/image';
+import AKGLogo from '../../../public/services/sound/akg-logo.png';
+import SennheiserLogo from '../../../public/services/sound/sennheiser-logo.png';
+import ShureLogo from '../../../public/services/sound/shure-logo.png';
+import ElectroVoiceLogo from '../../../public/services/sound/electro-voice-logo.png';
+import RodeLogo from '../../../public/services/sound/rode-logo.png';
 import Link from 'next/link';
 import {
   AcademicCapIcon,
@@ -119,18 +125,18 @@ export function Sound() {
         </div>
         <div className='container mx-auto grid sm:grid-cols-5 gap-12 sm:gap-6 md:gap-9 lg:gap-12 justify-center items-center'>
           {[
-            { src: '/services/sound/akg-logo.png', alt: 'akg' },
+            { src: AKGLogo, alt: 'akg' },
 
-            { src: '/services/sound/sennheiser-logo.png', alt: 'sennheiser' },
-            { src: '/services/sound/shure-logo.png', alt: 'shure' },
+            { src: SennheiserLogo, alt: 'sennheiser' },
+            { src: ShureLogo, alt: 'shure' },
             {
-              src: '/services/sound/electro-voice-logo.png',
+              src: ElectroVoiceLogo,
               alt: 'electro-voice',
             },
-            { src: '/services/sound/rode-logo.png', alt: 'rode' },
+            { src: RodeLogo, alt: 'rode' },
           ].map(({ src, alt }) => (
-            <div className='mx-32 sm:mx-0' key={src}>
-              <img className='w-ful' src={src} alt={alt} />
+            <div className='mx-32 sm:mx-0' key={alt}>
+              <Image className='w-ful' src={src} alt={alt} placeholder='blur' />
             </div>
           ))}
         </div>

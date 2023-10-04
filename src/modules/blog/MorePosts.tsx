@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Post } from '@/api/blog/blog-adapter';
 
@@ -20,7 +21,13 @@ export function MorePosts({ posts }: MorePostsProps) {
                 <div className='group grid gap-4'>
                   <div className='rounded overflow-hidden relative'>
                     <div className='absolute group-hover:bg-black/25 h-full w-full inset-0 transition-colors' />
-                    <img src={img.src} alt={img.alt} />
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={1536}
+                      height={864}
+                      sizes='(min-width: 768px) 50vw, (min-width: 1280px) 25vw, 100vw'
+                    />
                   </div>
                   <div className='grid gap-2'>
                     <h3 className='text-fineprint text-primary-700 group-hover:text-black transition-colors'>
