@@ -21,7 +21,7 @@ export function Navbar() {
       <div className='container mx-auto px-4 sm:px-6'>
         <div className='flex items-center justify-between border-b border-gray-600 py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
-            <Link href='/'>
+            <Link href='/' aria-label='Navigate to home page'>
               <MusicalNoteIcon className='h-8 w-auto sm:h-10 text-primary-400' />
             </Link>
           </div>

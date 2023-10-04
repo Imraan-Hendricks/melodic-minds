@@ -1,26 +1,23 @@
-import Image from 'next/image';
-import MicImage from '../../../public/home/hero/mic.jpg';
-import { CheckIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+import { BsSoundwave } from 'react-icons/bs';
+import { Button } from '@/components/Button';
 
 export function Hero() {
   return (
-    <section className='bg-black px-5'>
-      <div className='flex flex-col lg:flex-row justify-evenly items-center pb-12 lg:pb-0 container mx-auto'>
-        <div>
-          <Image src={MicImage} alt='microphone' />
-        </div>
+    <section className='bg-black px-5 py-12 sm:py-24'>
+      <div className='container max-w-5xl mx-auto'>
         <div className='grid gap-8 content-center'>
           <div className='grid gap-5 h-max'>
-            <h1 className='text-title text-gray-50'>
+            <h1 className='text-title text-gray-50 text-center'>
               Melodic <span className='text-primary-500'>Minds</span>
             </h1>
-            <hr className='border-primary-400' />
-            <p className='text-subtitle text-gray-400 max-w-3xl'>
+            <p className='text-subtitle text-gray-400 max-w-3xl text-center mx-auto'>
               Unleash your creativity and elevate your sound with Melodic Minds
               - the ultimate recording studio for bringing your music to life.
             </p>
           </div>
-          <ul className='grid grid-cols-2 lg:grid-cols-3 gap-8'>
+          <hr className='border-primary-400' />
+          <ul className='grid grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-12 sm:gap-y-8 mx-auto'>
             {[
               'Pro-level gear',
               'Expert engineers',
@@ -31,14 +28,27 @@ export function Hero() {
             ].map((feature) => (
               <li
                 key={feature}
-                className='text-body flex items-center text-gray-50'>
-                <div className='mr-4 bg-primary-400 w-max rounded-full p-1'>
-                  <CheckIcon className='w-4 h-4 text-black' />
+                className='text-body flex flex-col sm:flex-row items-center text-gray-50 gap-2'>
+                <div className='sm:mr-4 bg-primary-700 w-max rounded-sm p-1.5'>
+                  <BsSoundwave className='w-6 h-6 text-white' />
                 </div>
                 {feature}
               </li>
             ))}
           </ul>
+          <hr className='border-primary-400' />
+          <div className='flex gap-3 mx-auto'>
+            <Link href='/services'>
+              <Button variant='contained'>Explore Services</Button>
+            </Link>
+            <Link href='/contact'>
+              <Button
+                className='text-white active:text-white'
+                variant='outlined'>
+                Book Session
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
