@@ -35,7 +35,7 @@ export function Button({
       onClick={onClick}
       className={clsx(
         'flex justify-center items-center px-4 py-2',
-        'text-button border rounded transition-colors',
+        'text-button border-2 rounded transition-colors',
         'disabled:opacity-70',
         variant === 'text' && [
           color === 'primary-500' &&
