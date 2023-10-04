@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import MixingBoardImage from '../../../public/home/studio/mixing-board.jpg';
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export function Studio() {
@@ -37,15 +39,15 @@ export function Studio() {
         </div>
         <div>
           <div className='relative'>
-            <img
+            <Image
               className='absolute inset-0 object-cover w-full h-full'
-              src='/home/studio/mixing-board.jpg'
+              src={MixingBoardImage}
               alt='mixing-board'
             />
             <div className='relative bg-black/50'>
-              <img
+              <Image
                 className='w-full invisible'
-                src='/home/studio/mixing-board.jpg'
+                src={MixingBoardImage}
                 alt='mixing-board'
               />
             </div>

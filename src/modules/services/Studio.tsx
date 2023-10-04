@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import RecordingStudio from '../../../public/services/studio/recording-studio.jpg';
 import {
   AcademicCapIcon,
   ClipboardIcon,
@@ -9,9 +11,9 @@ import {
 export function Studio() {
   return (
     <div className='relative'>
-      <img
+      <Image
         className='absolute inset-0 object-cover w-full h-full'
-        src='/services/studio/recording-studio.jpg'
+        src={RecordingStudio}
         alt='recording studio'
       />
       <div className='relative bg-gradient-to-bl from-black/90 via-black/95 to-black/80'>

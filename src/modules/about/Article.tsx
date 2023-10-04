@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import ConcertImage from '../../../public/about/article/concert.jpg';
+
 export function Article() {
   return (
     <section className='px-5 py-24 bg-black'>
@@ -12,11 +15,7 @@ export function Article() {
           </p>
         </div>
         <div className='rounded-md overflow-hidden'>
-          <img
-            className='w-full'
-            src='/about/article/concert.jpg'
-            alt='concert'
-          />
+          <Image className='w-full' src={ConcertImage} alt='concert' />
         </div>
         <div className='grid gap-5'>
           <div className='grid gap-2'>

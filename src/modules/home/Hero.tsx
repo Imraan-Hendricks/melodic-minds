@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import MicImage from '../../../public/home/hero/mic.jpg';
 import { CheckIcon } from '@heroicons/react/24/outline';
 
 export function Hero() {
@@ -5,7 +7,7 @@ export function Hero() {
     <section className='bg-black px-5'>
       <div className='flex flex-col lg:flex-row justify-evenly items-center pb-12 lg:pb-0 container mx-auto'>
         <div>
-          <img src='/home/hero/mic.jpg' alt='microphone' />
+          <Image src={MicImage} alt='microphone' />
         </div>
         <div className='grid gap-8 content-center'>
           <div className='grid gap-5 h-max'>

@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import MicImage from '../../../public/home/about/purple-mic.jpg';
+import VocalistImage from '../../../public/home/about/vocalist-1.jpg';
 import Link from 'next/link';
 import { Button } from '@/components/Button';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
@@ -42,16 +45,18 @@ export function About() {
         </div>
         <div className='grid sm:grid-cols-2 gap-8 sm:gap-4 md:gap-8'>
           <div className='w-full row-span-2 rounded-md overflow-hidden'>
-            <img
+            <Image
+              placeholder='blur'
               className='w-full'
-              src='/home/about/purple-mic.jpg'
+              src={MicImage}
               alt='microphone'
             />
           </div>
           <div className='w-full rounded-md overflow-hidden'>
-            <img
+            <Image
+              placeholder='blur'
               className='h-full'
-              src='/home/about/vocalist-1.jpg'
+              src={VocalistImage}
               alt='vocalist'
             />
           </div>
